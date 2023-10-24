@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="creditcard.css">
+</head>
+<body>
+    <div class="creditcard">
+        <form action="">
+            
+            
+            <input type="number" id="cardno" max="999999999999" pattern="[0-9]" required class="cn" placeholder="XXXX XXXX XXXX" inputmode="numeric">
+            <label for="cardno" id="lfcn" class="lcn">Enter the card number</label>
+            <div class="divnum">
+                <select name="select" id="sel" disabled>
+                    <option value="+91">+91</option>
+                </select>
+                <input type="number" id="phno" max="9999999999" pattern="[0-9]" required placeholder="XXXXX XXXXX" inputmode="numeric">
+                <label for="phno" id="lfpn">Enter The Phone Number</label>
+            </div>
+            <div class="exacvv">
+                <input type="month" id="expiry" required>
+                <label for="expiry" id="lfexp">Expiry Date</label>
+                <input type="number" id="cvv" max="999" min="000" placeholder="XXX" required inputmode="numeric">
+                <label for="cvv" id="lfcvv">CVV</label>
+            </div>
+            <div class="error">
+                <input type="text" id="name" placeholder="Card Holder Name" required><br>
+                <label for="name" id="lfchn">Card holder name</label>
+            </div>
+            <input type="submit" value="PAY" id="paybtn"> 
+        </form>
+    </div>
+    div.otp
+</body>
+</html>
